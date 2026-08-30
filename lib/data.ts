@@ -1,0 +1,9 @@
+export type Business = { id:string; name:string; category:string; location:string; rating:number; reviews:number; price:string; open:boolean; description:string; image:string };
+export const businesses: Business[] = [
+ {id:'the-green-table',name:'The Green Table',category:'Restaurants',location:'Austin, TX',rating:4.8,reviews:326,price:'$$',open:true,description:'Seasonal plates, friendly service, and a neighborhood table for every occasion.',image:'🌿'},
+ {id:'brake-and-bloom',name:'Brake & Bloom Auto',category:'Auto Repair',location:'Columbus, OH',rating:4.7,reviews:189,price:'$$',open:true,description:'Straight answers and dependable repairs from a woman-owned garage.',image:'🔧'},
+ {id:'harbor-family-dental',name:'Harbor Family Dental',category:'Healthcare',location:'Portland, ME',rating:4.9,reviews:244,price:'$$$',open:false,description:'A calm, modern practice that makes routine care feel easy.',image:'🦷'},
+ {id:'sunroom-electric',name:'Sunroom Electric',category:'Contractors',location:'Denver, CO',rating:4.6,reviews:112,price:'$$$',open:true,description:'Licensed local electricians for homes, renovations, and emergencies.',image:'⚡'}
+];
+export const categories = ['Restaurants','Auto Repair','Contractors','Healthcare','Beauty & Wellness','Home Services'];
+export const reviews = [{id:'r1',author:'maya-writes',name:'Maya Thompson',rating:5,title:'A place that remembers you',body:'The menu changes with the season, but the warmth never does. Our server made a thoughtful recommendation and every plate landed.',helpful:48,date:'2 days ago',badge:'Local Expert'}, {id:'r2',author:'calebontheroad',name:'Caleb Ross',rating:4,title:'Beautiful lunch, book ahead',body:'Excellent produce-forward food and a lovely patio. It gets busy quickly on weekends, so a reservation is worth it.',helpful:22,date:'1 week ago',badge:'Top Contributor'}];
