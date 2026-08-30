@@ -1,4 +1,4 @@
-# My Two Cents
+# My Two Sense
 
 A responsive, PWA-ready nationwide business-review MVP built with Next.js, TypeScript, Tailwind, Prisma, and PostgreSQL.
 
