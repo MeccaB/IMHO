@@ -9,7 +9,7 @@ export function SiteHeader() {
         <span>Unsolicited <span className="text-brand">Advice</span></span>
       </Link>
       <nav className="hidden gap-6 text-sm font-semibold md:flex" aria-label="Primary navigation">
-        <Link href="/offender-registry">Offender Registry</Link>
+        <Link href="/my-two-cents">My Two Cents</Link>
         <Link href="/the-deal">Drop a Dime</Link>
         <Link href="/business/claim">For Businesses</Link>
       </nav>
