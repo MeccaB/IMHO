@@ -1,8 +1,9 @@
 import { NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
+import type { CookieOptions } from '@supabase/ssr';
 
 function client(request: Request, response: NextResponse) {
-  return createServerClient(process.env.NEXT_SUPABASE_URL!, process.env.NEXT_SUPABASE_ANON_KEY!, { cookies: { getAll: () => request.headers.get('cookie')?.split('; ').map((entry) => { const [name, ...rest] = entry.split('='); return { name, value: rest.join('=') }; }) ?? [], setAll: (items) => items.forEach(({ name, value, options }) => response.cookies.set(name, value, options)) } });
+  return createServerClient(process.env.NEXT_SUPABASE_URL!, process.env.NEXT_SUPABASE_ANON_KEY!, { cookies: { getAll: () => request.headers.get('cookie')?.split('; ').map((entry) => { const [name, ...rest] = entry.split('='); return { name, value: rest.join('=') }; }) ?? [], setAll: (items: { name: string; value: string; options: CookieOptions }[]) => items.forEach(({ name, value, options }) => response.cookies.set(name, value, options)) } });
 }
 
 export async function POST(request: Request) {
