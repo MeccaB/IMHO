@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
+import { AuthProvider } from '@/components/auth-provider';
 
 const description = 'No corporate filters. No bought-off stars. Just CIs dropping verified paperwork on local businesses so you know who to trust!';
 
@@ -27,5 +28,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body><SiteHeader />{children}<SiteFooter /><script dangerouslySetInnerHTML={{ __html: "if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js')" }} /></body></html>;
+  return <html lang="en"><body><AuthProvider><SiteHeader />{children}<SiteFooter /></AuthProvider><script dangerouslySetInnerHTML={{ __html: "if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js')" }} /></body></html>;
 }
