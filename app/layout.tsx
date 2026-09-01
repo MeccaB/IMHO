@@ -6,20 +6,23 @@ import { SiteHeader } from '@/components/site-header';
 const description = 'No corporate filters. No bought-off stars. Just CIs dropping verified paperwork on local businesses so you know who to trust!';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://my2cents-ten.vercel.app'),
   title: 'Unsolicited Advice | Give us your two cents',
   description,
   manifest: '/manifest.json',
+  alternates: { canonical: '/' },
   icons: { icon: '/favicon.png' },
   openGraph: {
+    url: '/',
     title: 'Unsolicited Advice | My Two Cents',
     description,
-    images: ['/ytbannerUA.png'],
+    images: [{ url: '/ytbannerUA.png', width: 2106, height: 506, alt: 'Unsolicited Advice — Drop a Dime, My Two Cents.' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Unsolicited Advice | My Two Cents',
     description,
-    images: ['/ytbannerUA.png'],
+    images: [{ url: '/ytbannerUA.png', width: 2106, height: 506, alt: 'Unsolicited Advice — Drop a Dime, My Two Cents.' }],
   },
 };
 
