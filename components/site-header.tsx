@@ -6,12 +6,12 @@ export function SiteHeader() {
     <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
       <Link href="/" className="flex items-center gap-2 text-xl font-black tracking-tight">
         <Image src="/icon.svg" alt="" width={30} height={30} priority />
-        <span>Undercover <span className="text-brand">Fact Police</span></span>
+        <span>Unsolicited <span className="text-brand">Advice</span></span>
       </Link>
       <nav className="hidden gap-6 text-sm font-semibold md:flex" aria-label="Primary navigation">
-        <Link href="/tea">What&apos;s the Tea?</Link>
         <Link href="/offender-registry">Offender Registry</Link>
-        <Link href="/the-deal">The Deal</Link>
+        <Link href="/the-deal">Drop a Dime</Link>
+        <Link href="/business/claim">For Businesses</Link>
       </nav>
       <div className="flex gap-2">
         <Link className="rounded-full px-4 py-2 text-sm font-semibold" href="/login">Log in</Link>
