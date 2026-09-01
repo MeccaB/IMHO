@@ -1,1 +1,10 @@
-{"name":"Unsolicited Advice","short_name":"Advice","description":"Community-powered business reviews","start_url":"/","display":"standalone","background_color":"#fffaf5","theme_color":"#10221e","icons":[{"src":"/icon.svg","sizes":"any","type":"image/svg+xml"}]}
+{
+  "name": "Unsolicited Advice",
+  "short_name": "Advice",
+  "description": "No corporate filters. No bought-off stars. Just CIs dropping verified paperwork on local businesses so you know who to trust!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf5",
+  "theme_color": "#10221e",
+  "icons": [{ "src": "/favicon.png", "sizes": "any", "type": "image/png" }]
+}
