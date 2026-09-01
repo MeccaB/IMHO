@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon.png' },
   openGraph: {
     url: '/',
-    title: 'Unsolicited Advice | My Two Cents',
+    title: 'Unsolicited Advice | Community-driven feedback platform',
     description,
     images: [{ url: '/ytbannerUA.png', width: 2106, height: 506, alt: 'Unsolicited Advice — Drop a Dime, My Two Cents.' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Unsolicited Advice | My Two Cents',
+    title: 'Unsolicited Advice | Community-driven feedback platform',
     description,
     images: [{ url: '/ytbannerUA.png', width: 2106, height: 506, alt: 'Unsolicited Advice — Drop a Dime, My Two Cents.' }],
   },
