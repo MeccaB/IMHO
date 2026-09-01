@@ -1,1 +1,2 @@
-export default function Page(){return <main className="mx-auto max-w-md px-4 py-14"><h1 className="text-4xl font-black">Account</h1><div className="mt-7 rounded-2xl bg-white p-6 ring-1 ring-stone-200"><input className="mb-3 w-full rounded-lg border p-3" placeholder="Email"/><input className="w-full rounded-lg border p-3" placeholder="Password" type="password"/><button className="mt-4 w-full rounded-xl bg-ink py-3 font-bold text-white">Continue</button><p className="mt-4 text-center text-sm text-stone-500">Member accounts are coming soon.</p></div></main>}
+import { redirect } from 'next/navigation';
+export default function LoginPage(){ redirect('/tea'); }

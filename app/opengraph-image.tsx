@@ -2,4 +2,16 @@ import { ImageResponse } from 'next/og';
 export const alt = 'Unsolicited Advice — My Two Cents';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
-export default function OpenGraphImage() { return new ImageResponse(<div style={{ height: '100%', width: '100%', display: 'flex', alignItems: 'center', background: '#10221e', color: '#fffaf2', padding: 64 }}><div style={{ display: 'flex', height: 320, width: 320, borderRadius: '50%', background: '#c77d4d', border: '12px solid #fffaf2', alignItems: 'center', justifyContent: 'center', color: '#10221e', fontSize: 136, fontWeight: 800 }}>2¢</div><div style={{ display: 'flex', flexDirection: 'column', marginLeft: 58 }}><div style={{ fontSize: 72, fontWeight: 800, lineHeight: 1 }}>UNSOLICITED<br/>ADVICE</div><div style={{ marginTop: 28, color: '#c8f169', fontSize: 36 }}>GIVE US YOUR TWO CENTS.</div><div style={{ marginTop: 18, fontSize: 25 }}>Honest thoughts. Unfiltered. Hopefully helpful.</div></div></div>, size); }
+export default function OpenGraphImage() {
+  return new ImageResponse(
+    <div style={{ height: '100%', width: '100%', display: 'flex', alignItems: 'center', background: '#10221e', color: '#fffaf2', padding: 64 }}>
+      <div style={{ display: 'flex', height: 320, width: 320, borderRadius: '50%', background: '#c77d4d', border: '12px solid #fffaf2', alignItems: 'center', justifyContent: 'center', color: '#10221e', fontSize: 136, fontWeight: 800 }}>2¢</div>
+      <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 58 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', fontSize: 72, fontWeight: 800, lineHeight: 1 }}><span>UNSOLICITED</span><span>ADVICE</span></div>
+        <div style={{ display: 'flex', marginTop: 28, color: '#c8f169', fontSize: 36 }}>GIVE US YOUR TWO CENTS.</div>
+        <div style={{ display: 'flex', marginTop: 18, fontSize: 25 }}>Honest thoughts. Unfiltered. Hopefully helpful.</div>
+      </div>
+    </div>,
+    size,
+  );
+}
