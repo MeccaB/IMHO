@@ -1,2 +1,2 @@
 import { redirect } from 'next/navigation';
-export default function LoginPage(){ redirect('/offender-registry'); }
+export default function LoginPage(){ redirect('/my-two-cents'); }
