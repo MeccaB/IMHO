@@ -1,2 +1,5 @@
-import { redirect } from 'next/navigation';
-export default function LoginPage(){ redirect('/my-two-cents'); }
+import { GoogleSignInButton } from '@/components/google-sign-in-button';
+
+export default function LoginPage() {
+  return <main className="mx-auto flex min-h-[70vh] max-w-md items-center px-4 py-14"><section className="w-full rounded-2xl bg-white p-6 ring-1 ring-stone-200"><p className="font-bold text-brand">WELCOME BACK</p><h1 className="mt-2 text-4xl font-black">Sign in</h1><p className="mt-3 text-stone-600">Use your Google account to submit reports and join the conversation.</p><div className="mt-6"><GoogleSignInButton /></div></section></main>;
+}
