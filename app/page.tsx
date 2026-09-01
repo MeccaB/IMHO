@@ -23,14 +23,18 @@ export default function Home() {
           <div className="mt-8 max-w-2xl"><SearchBox /></div>
           <div className="mt-6 flex flex-wrap gap-4 text-sm font-bold"><Link href="/snitch" className="rounded-full bg-[#c8f169] px-5 py-3 text-[#10221e]">Snitch</Link><Link href="#story" className="rounded-full border border-white/25 px-5 py-3">Why we exist</Link></div>
         </div>
-        <div className="relative h-[480px] overflow-hidden rounded-[2rem] border border-white/15 bg-[#e8b48a] shadow-2xl lg:h-[560px]">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,#fff1d5_0,transparent_25%),radial-gradient(circle_at_78%_35%,#7d3f57_0,transparent_35%),linear-gradient(145deg,#e9aa80,#833e58_55%,#193f38)]" />
-          <div className="absolute -left-12 bottom-0 h-80 w-72 rotate-[-8deg] rounded-t-[9rem] bg-[#f5c8a6]/90" />
-          <div className="absolute bottom-12 left-24 h-44 w-44 rounded-full border-[18px] border-[#241a22] bg-[#5a2942] shadow-xl" />
-          <div className="absolute right-8 top-14 h-64 w-48 rotate-[10deg] rounded-[7rem_7rem_3rem_3rem] bg-[#241a22]" />
-          <div className="absolute right-20 top-36 h-28 w-24 rounded-full bg-[#c4775e]" />
+        <div className="relative h-[480px] overflow-hidden rounded-[2rem] border border-white/15 bg-[#c9b08a] shadow-2xl lg:h-[560px]" aria-label="Illustration of an investigative dossier and magnifying glass">
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,#d8c39d,#9c7c58_55%,#4c342d)]" />
+          <div className="absolute -right-16 -top-16 h-72 w-72 rounded-full border-[20px] border-[#10221e]/80" />
+          <div className="absolute right-12 top-36 h-36 w-8 rotate-[-40deg] rounded-full bg-[#10221e]/80" />
+          <div className="absolute left-10 top-12 h-[390px] w-[300px] rotate-[-6deg] rounded-xl bg-[#fffaf2] p-7 text-[#10221e] shadow-2xl md:left-16 md:w-[340px]">
+            <p className="text-xs font-black tracking-[.22em] text-[#b85036]">CASE FILE 001</p>
+            <div className="mt-7 h-3 w-3/4 rounded bg-[#10221e]" /><div className="mt-3 h-3 w-full rounded bg-stone-300" /><div className="mt-3 h-3 w-5/6 rounded bg-stone-300" />
+            <div className="mt-8 border-y-2 border-dashed border-[#b85036] py-4 text-center text-xl font-black tracking-[.12em] text-[#b85036]">DOSSIER</div>
+            <div className="mt-7 space-y-3"><div className="h-2 w-full rounded bg-stone-300" /><div className="h-2 w-11/12 rounded bg-stone-300" /><div className="h-2 w-4/5 rounded bg-stone-300" /></div>
+            <div className="absolute bottom-7 right-7 rotate-[-8deg] rounded border-2 border-[#b85036] px-3 py-1 text-sm font-black text-[#b85036]">ON FILE</div>
+          </div>
           <div className="absolute bottom-7 left-7 rounded-2xl bg-[#10221e]/90 p-4 backdrop-blur"><p className="text-xs font-bold uppercase tracking-[.16em] text-[#c8f169]">Field intel</p><p className="mt-1 max-w-44 font-serif text-lg leading-tight">“The registry has the receipts.”</p></div>
-          <div className="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full bg-white/90 text-[#10221e]" aria-label="Video coming soon"><span className="ml-0.5 text-sm">▶</span></div>
         </div>
       </div>
     </section>
