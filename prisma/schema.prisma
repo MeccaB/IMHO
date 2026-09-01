@@ -7,11 +7,30 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum Role { USER BUSINESS_OWNER MODERATOR ADMIN }
-enum ContentStatus { PUBLISHED FLAGGED REMOVED }
-enum VoteTarget { REVIEW COMMENT }
-enum VoteValue { UP DOWN }
-enum ReportStatus { OPEN REVIEWED DISMISSED }
+enum Role {
+  USER
+  BUSINESS_OWNER
+  MODERATOR
+  ADMIN
+}
+enum ContentStatus {
+  PUBLISHED
+  FLAGGED
+  REMOVED
+}
+enum VoteTarget {
+  REVIEW
+  COMMENT
+}
+enum VoteValue {
+  UP
+  DOWN
+}
+enum ReportStatus {
+  OPEN
+  REVIEWED
+  DISMISSED
+}
 
 model User {
   id            String    @id @default(cuid())
